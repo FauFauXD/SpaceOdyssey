@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "REGULAR";
+    src: url("/Font/AmerigoBT.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "BOLD";
+    src: url("/Font/AmerigoBT_Bold.woff2") format("woff2");
+}
+
+body{
+overflow-x: hidden;
+overflow-y: hidden;
+
+}
+
+
+
+.WeltallKarte{ 
+    flex: 1;
+    padding-left: 200px;
+    margin: -10px;
+    margin-top: -120px;
+    margin-bottom: 220px;
+    height: auto;
+  }
+
+
+
+.HimmelKarte{ 
+    flex: 1;
+    padding-left: 200px;
+    margin: -10px;
+    margin-top: -120px;
+    margin-bottom: 220px;
+    height: auto;
+}
+
+
+
+.JAHR {
+    position: absolute;
+    top: 30%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    font-size: 14vw;
+    color: white;
+    font-family: "BOLD";
+  }
+
+  .ODESSEY {
+    position: absolute;
+    top: 47%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    font-size: 3.8vw;
+    color: white;
+    font-family: "BOLD";
+  }
+
+  .KUBI {
+    position: absolute;
+    top: 97%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    color: white;
+    font-family: "BOLD";
+    letter-spacing: 0.08em;
+  }
+
+  .ZITAT {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4vw;
+    color: white;
+    font-family: "REGULAR";
+    letter-spacing: 0.04em;
+  }
+
+
+
+
+  .Planet{   
+    position: absolute;
+    height: 120%;
+    transform: translate(-5%, -25%);
+    animation-name: fadeInOut;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+  }
+  
+
+
+  .Affe{
+    position: absolute;
+    height: 120%;
+    transform: translate(-5%, -25%);
+    animation-name: fadeInOutX;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+  }
+
+
+  .Schiff{   
+	position: absolute;
+    top: 22%;
+    left: 32.5%;
+    height: 17%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    animation-name: fadeInOut, rotate;
+    animation-duration: 12s, 14s;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: infinite;
+  }
+
+
+
+  .Knochen{   
+	position: absolute;
+    top: 22%;
+    left: 32.5%;
+    height: 17%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    animation-name: fadeInOutX, rotate;
+    animation-duration: 12s, 5s;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: infinite;
+   
+  }
+  
+
+
+
+
+
+  .Uni{
+    position: absolute;
+    top: 10px;
+    margin: -10px;
+    height: 60vw;
+    animation-name: fadeInOut;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+
+  .Himmel{
+    position: absolute;
+    top: 10px;
+    margin: -10px;
+    height: 60vw;
+    animation-name: fadeInOutX;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    }
+
+
+/* MEDIA */
+
+@media (max-width:412px) { 
+    .Uni{
+        position: absolute;
+        top: 10px;
+        margin: -10px;
+        height: 223vw;
+        animation-name: fadeInOut;
+        animation-duration: 12s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+    }
+
+
+    @media (max-width:412px) { 
+    .Himmel{
+        position: absolute;
+        top: 10px;
+        margin: -10px;
+        height: 223vw;
+        animation-name: fadeInOutX;
+        animation-duration: 12s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        }   
+    }
+
+    @media (max-width:412px) {
+    .Planet{   
+        position: absolute;
+        height: 100%;
+        transform: translate(-75%, -10%);
+        animation-name: fadeInOut;
+        animation-duration: 12s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite; 
+      }
+    }
+
+
+    @media (max-width:412px) {
+        .Affe{
+            position: absolute;
+            height: 100%;
+            transform: translate(-75%, -10%);
+            animation-name: fadeInOutX;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; 
+          }
+        }
+
+
+
+
+
+
+
+/* ANIMATION */
+
+
+  
+@keyframes fadeInOut {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    50.01% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+  @keyframes fadeInOutX {
+    0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      50.01% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+  
+  
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
