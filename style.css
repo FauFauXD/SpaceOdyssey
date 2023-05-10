@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "REGULAR";
-    src: url("/Font/AmerigoBT.woff2") format("woff2");
+  font-family: "REGULAR";
+  src: url("/Font/AmerigoBT.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "BOLD";
-    src: url("/Font/AmerigoBT_Bold.woff2") format("woff2");
+  font-family: "BOLD";
+  src: url("/Font/AmerigoBT_Bold.woff2") format("woff2");
 }
 
 body{
@@ -17,167 +17,167 @@ overflow-y: hidden;
 
 
 .WeltallKarte{ 
-    flex: 1;
-    padding-left: 200px;
-    margin: -10px;
-    margin-top: -120px;
-    margin-bottom: 220px;
-    height: auto;
-    word-wrap: break-all;
-  }
+  flex: 1;
+  padding-left: 200px;
+  margin: -10px;
+  margin-top: -120px;
+  margin-bottom: 220px;
+  height: auto;
+  word-wrap: break-all;
+}
 
 
 
 .HimmelKarte{ 
-    flex: 1;
-    padding-left: 200px;
-    margin: -10px;
-    margin-top: -120px;
-    margin-bottom: 220px;
-    height: auto;
-    word-wrap: break-all;
+  flex: 1;
+  padding-left: 200px;
+  margin: -10px;
+  margin-top: -120px;
+  margin-bottom: 220px;
+  height: auto;
+  word-wrap: break-all;
 }
 
 
 
 .JAHR {
-    position: absolute;
-    top: 24%;
-    left: 26%;
-    transform: translate(-50%, -50%);
-    font-size: 14vw;
-    color: white;
-    font-family: "BOLD";
+  position: absolute;
+  top: 24%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  font-size: 14vw;
+  color: white;
+  font-family: "BOLD";
+}
+
+.ODESSEY {
+  position: absolute;
+  word-wrap: break-all;
+  top: 41%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+  font-size: 3.8vw;
+  color: white;
+  font-family: "BOLD";
+}
+
+.KUBI {
+  position: absolute;
+  top: 97%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  font-size: 1vw;
+  color: white;
+  font-family: "BOLD";
+  letter-spacing: 0.08em;
+}
+
+.ZITAT {
+  position: absolute;
+  top: 55%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4vw;
+  color: white;
+  font-family: "REGULAR";
+  letter-spacing: 0.04em;
+}
+
+
+
+.ZITAT2 {
+  position: absolute;
+  top: 69%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 0vw;
+  opacity: 0;
+  font-family: "REGULAR";
+  letter-spacing: 0.04em;
+}
+
+
+
+
+.Planet{   
+  position: absolute;
+  height: 120%;
+  transform: translate(-5%, -25%);
+  animation-name: fadeInOut;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; 
+}
+
+
+
+.Affe{
+  position: absolute;
+  height: 120%;
+  transform: translate(-5%, -25%);
+  animation-name: fadeInOutX;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; 
+}
+
+
+.Schiff{   
+position: absolute;
+  top: 16%;
+  left: 32.5%;
+  height: 17%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  animation-name: fadeInOut, rotate;
+  animation-duration: 12s, 14s;
+  animation-timing-function: linear, linear;
+  animation-iteration-count: infinite;
+}
+
+
+
+.Knochen{   
+position: absolute;
+  top: 16%;
+  left: 32.5%;
+  height: 17%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  animation-name: fadeInOutX, rotate;
+  animation-duration: 12s, 5s;
+  animation-timing-function: linear, linear;
+  animation-iteration-count: infinite;
+ 
+}
+
+
+
+
+
+
+.Uni{
+  position: absolute;
+  top: 10px;
+  margin: -10px;
+  height: 60vw;
+  animation-name: fadeInOut;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.Himmel{
+  position: absolute;
+  top: 10px;
+  margin: -10px;
+  height: 60vw;
+  animation-name: fadeInOutX;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   }
-
-  .ODESSEY {
-    position: absolute;
-    word-wrap: break-all;
-    top: 41%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    font-size: 3.8vw;
-    color: white;
-    font-family: "BOLD";
-  }
-
-  .KUBI {
-    position: absolute;
-    top: 97%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    font-size: 1vw;
-    color: white;
-    font-family: "BOLD";
-    letter-spacing: 0.08em;
-  }
-
-  .ZITAT {
-    position: absolute;
-    top: 55%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    font-size: 1.4vw;
-    color: white;
-    font-family: "REGULAR";
-    letter-spacing: 0.04em;
-  }
-
-
-
-  .ZITAT2 {
-    position: absolute;
-    top: 69%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    font-size: 0vw;
-    opacity: 0;
-    font-family: "REGULAR";
-    letter-spacing: 0.04em;
-  }
-
-
-
-
-  .Planet{   
-    position: absolute;
-    height: 120%;
-    transform: translate(-5%, -25%);
-    animation-name: fadeInOut;
-    animation-duration: 12s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; 
-  }
-  
-
-
-  .Affe{
-    position: absolute;
-    height: 120%;
-    transform: translate(-5%, -25%);
-    animation-name: fadeInOutX;
-    animation-duration: 12s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; 
-  }
-
-
-  .Schiff{   
-	position: absolute;
-    top: 16%;
-    left: 32.5%;
-    height: 17%;
-    transform: translate(-50%, -50%);
-    transform-origin: center;
-    animation-name: fadeInOut, rotate;
-    animation-duration: 12s, 14s;
-    animation-timing-function: linear, linear;
-    animation-iteration-count: infinite;
-  }
-
-
-
-  .Knochen{   
-	position: absolute;
-    top: 16%;
-    left: 32.5%;
-    height: 17%;
-    transform: translate(-50%, -50%);
-    transform-origin: center;
-    animation-name: fadeInOutX, rotate;
-    animation-duration: 12s, 5s;
-    animation-timing-function: linear, linear;
-    animation-iteration-count: infinite;
-   
-  }
-  
-
-
-
-
-
-  .Uni{
-    position: absolute;
-    top: 10px;
-    margin: -10px;
-    height: 60vw;
-    animation-name: fadeInOut;
-    animation-duration: 12s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-
-
-  .Himmel{
-    position: absolute;
-    top: 10px;
-    margin: -10px;
-    height: 60vw;
-    animation-name: fadeInOutX;
-    animation-duration: 12s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    }
 
 
 
@@ -186,176 +186,176 @@ overflow-y: hidden;
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 480px) {
-    .Uni{
-        position: absolute;
-        top: 10px;
-        margin: -10px;
-        height: 100%;
-        animation-name: fadeInOut;
-        animation-duration: 12s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
+  .Uni{
+      position: absolute;
+      top: 10px;
+      margin: -10px;
+      height: 100%;
+      animation-name: fadeInOut;
+      animation-duration: 12s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
     }
+  }
 
 
-    @media screen and (max-width: 480px) {    
-    .Himmel{
-        position: absolute;
-        margin: -10px;
-        height: 94%;
-        animation-name: fadeInOutX;
-        animation-duration: 12s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        }   
+  @media screen and (max-width: 480px) {    
+  .Himmel{
+      position: absolute;
+      margin: -10px;
+      height: 94%;
+      animation-name: fadeInOutX;
+      animation-duration: 12s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      }   
+  }
+
+  @media screen and (max-width: 480px) { 
+  .Planet{   
+      position: absolute;
+      height: 80%;
+      transform: translate(-60%, 12%);
+      animation-name: fadeInOut;
+      animation-duration: 12s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; 
     }
-
-    @media screen and (max-width: 480px) { 
-    .Planet{   
-        position: absolute;
-        height: 80%;
-        transform: translate(-60%, 12%);
-        animation-name: fadeInOut;
-        animation-duration: 12s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite; 
-      }
-    }
+  }
 
 
-   @media screen and (max-width: 480px) {
-        .Affe{
-            position: absolute;
-            height: 80%;
-            transform: translate(-60%, 12%);
-            animation-name: fadeInOutX;
-            animation-duration: 12s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite; 
-          }
-        }
-
-
-    @media screen and (max-width: 480px) {    
-        .JAHR {
+ @media screen and (max-width: 480px) {
+      .Affe{
           position: absolute;
-          top: 16%;
-          left: 44%;
-          transform: translate(-50%, -50%);
-          font-size: 35vw;
-          color: white;
-          font-family: "BOLD";
-          letter-spacing: 0.02em;
+          height: 80%;
+          transform: translate(-60%, 12%);
+          animation-name: fadeInOutX;
+          animation-duration: 12s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite; 
         }
       }
 
 
-      @media screen and (max-width: 480px) {  
-      .ODESSEY {
+  @media screen and (max-width: 480px) {    
+      .JAHR {
         position: absolute;
-        top: 29%;
-        left: 63%;
-        font-size: 8vw;
+        top: 16%;
+        left: 44%;
+        transform: translate(-50%, -50%);
+        font-size: 35vw;
         color: white;
         font-family: "BOLD";
-        width: 400px;
-        letter-spacing: 0.04em;
-      
-      }
-    }
-
-
-
-    @media screen and (max-width: 480px) {  
-      .ZITAT2 {
-        position: absolute;
-        text-align:center;
-        top: 48%;
-        left: 48%;
-        transform: translate(-50%, -50%);
-        font-size: 4vw;
-        color: white;
-        opacity: 1;
-        font-family: "REGULAR";
-        letter-spacing: 0.04em;
-       
+        letter-spacing: 0.02em;
       }
     }
 
 
     @media screen and (max-width: 480px) {  
-    .ZITAT {
+    .ODESSEY {
       position: absolute;
-      top: 69%;
-      left: 25%;
-      transform: translate(-50%, -50%);
-      font-size: 1.4vw;
+      top: 29%;
+      left: 63%;
+      font-size: 8vw;
       color: white;
-      opacity: 0;
-      font-family: "REGULAR";
+      font-family: "BOLD";
+      width: 400px;
       letter-spacing: 0.04em;
+    
     }
   }
 
 
 
- 
+  @media screen and (max-width: 480px) {  
+    .ZITAT2 {
+      position: absolute;
+      text-align:center;
+      top: 48%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+      font-size: 4vw;
+      color: white;
+      opacity: 1;
+      font-family: "REGULAR";
+      letter-spacing: 0.04em;
+     
+    }
+  }
+
+
+  @media screen and (max-width: 480px) {  
+  .ZITAT {
+    position: absolute;
+    top: 69%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4vw;
+    color: white;
+    opacity: 0;
+    font-family: "REGULAR";
+    letter-spacing: 0.04em;
+  }
+}
 
 
 
 
-    @media screen and (max-width: 480px) {  
-      .Schiff{   
-        position: absolute;
-          top: 11%;
-          left: 64%;
-          height: 13%;
-          transform: translate(-50%, -50%);
-          transform-origin: center;
-          animation-name: fadeInOut, rotate;
-          animation-duration: 12s, 14s;
-          animation-timing-function: linear, linear;
-          animation-iteration-count: infinite;
-        }
-      }
-      
-      
-      @media screen and (max-width: 480px) {  
-        .Knochen{   
-        position: absolute;
-          top: 11%;
-          left: 64%;
-          height: 13%;
-          transform: translate(-50%, -50%);
-          transform-origin: center;
-          animation-name: fadeInOutX, rotate;
-          animation-duration: 12s, 5s;
-          animation-timing-function: linear, linear;
-          animation-iteration-count: infinite;
-         
-        }
-      }
 
 
 
 
-      @media screen and (max-width: 480px) { 
-      .KUBI {
-        position: absolute;
-        top: 97%;
-        left: 73%;
+  @media screen and (max-width: 480px) {  
+    .Schiff{   
+      position: absolute;
+        top: 11%;
+        left: 64%;
+        height: 13%;
         transform: translate(-50%, -50%);
-        font-size: 3.5vw;
-        font-family: "BOLD";
-        letter-spacing: 0.08em;
-        width: 400px;
-        animation-name: colorChange;
-        animation-duration: 12s;
-        animation-timing-function: linear;
+        transform-origin: center;
+        animation-name: fadeInOut, rotate;
+        animation-duration: 12s, 14s;
+        animation-timing-function: linear, linear;
         animation-iteration-count: infinite;
       }
-    }      
+    }
+    
+    
+    @media screen and (max-width: 480px) {  
+      .Knochen{   
+      position: absolute;
+        top: 11%;
+        left: 64%;
+        height: 13%;
+        transform: translate(-50%, -50%);
+        transform-origin: center;
+        animation-name: fadeInOutX, rotate;
+        animation-duration: 12s, 5s;
+        animation-timing-function: linear, linear;
+        animation-iteration-count: infinite;
+       
+      }
+    }
+
+
+
+
+    @media screen and (max-width: 480px) { 
+    .KUBI {
+      position: absolute;
+      top: 97%;
+      left: 73%;
+      transform: translate(-50%, -50%);
+      font-size: 3.5vw;
+      font-family: "BOLD";
+      letter-spacing: 0.08em;
+      width: 400px;
+      animation-name: colorChange;
+      animation-duration: 12s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }      
 
 
 
@@ -366,66 +366,65 @@ overflow-y: hidden;
 /* ANIMATION */
 
 
-  
+
 @keyframes fadeInOut {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 1;
-    }
-    50.01% {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes fadeInOutX {
+  0% {
       opacity: 0;
     }
-    100% {
+    50% {
       opacity: 0;
     }
-  }
-
-
-  @keyframes fadeInOutX {
-    0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 0;
-      }
-      50.01% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-  
-  
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-
-
-  @keyframes colorChange {
-    0% {
-      color: black;
-    }
-    50% {
-      color: black;
-    }
     50.01% {
-      color: white;
+      opacity: 1;
     }
     100% {
-      color: white;
+      opacity: 1;
     }
   }
 
+
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@keyframes colorChange {
+  0% {
+    color: black;
+  }
+  50% {
+    color: black;
+  }
+  50.01% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
 
 
